@@ -13,11 +13,12 @@
 </header>
 
 <main>
-    <?php include "src/php/Secciones/ShowMovies.php" ?>
+    <?php include "src/php/Secciones/Peliculas/ShowMovies.php" ?>
 </main>
 
 <footer>
     <p class="text-center">Derechos de autor &copy; 2023 Cine</p>
+    <i class="fas fa-thumbs-up"></i>
 </footer>
 </body>
 </html>

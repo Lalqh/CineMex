@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Detalles de la película</title>
-    <link rel="stylesheet" type="text/css" href="../../css/StylesMovie.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/StylesMovie.css">
+    <link rel="stylesheet" href="../../../css/Styles.css">
+
 </head>
 <body>
-<?php include "Header.php"; ?>
+<?php include "../Header.php"; ?>
 <div class="container">
     <?php
-    include "../Funciones/Peliculas.php";
-    // Obtener el ID de la película desde la URL
+    include "../../Funciones/Peliculas.php";
+
     if (isset($_GET['id'])) {
         $idPelicula = $_GET['id'];
 
@@ -24,7 +26,7 @@
             echo '<h2 class="movie-title">' . $pelicula['NOMBRE_PELICULA'] . '</h2>';
             echo '<p class="movie-duration">Duración: ' . $pelicula['DURACION'] . '</p>';
             echo '<p class="movie-description">' . $pelicula['sinopsis'] . '</p>';
-            echo '<a href="#" class="btn btn-primary">Comprar Boletos</a>';
+            echo '<a href="FromReservaBoletos.php?id=' . $pelicula['ID'] . '" class="btn btn-primary">Comprar Boletos</a>';
             echo '</div>';
             echo '</div>';
         }else {

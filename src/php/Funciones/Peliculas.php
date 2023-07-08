@@ -50,4 +50,30 @@ function obtenerDetallesPelicula($idPelicula) {
         return null;
     }
 }
+function obtenerAsientosDisponibles($idPelicula) {
+    global $conexion;
+    try {
+        $consulta = "SELECT * FROM asiento WHERE ID_PELICULA = ?";
+        $ps = $conexion->prepare($consulta);
+        $ps->bind_param("i", $idPelicula);
+        $ps->execute();
+        $resultado = $ps->get_result();
+
+        if ($resultado->num_rows > 0) {
+            $asientos = array();
+
+            while ($fila = $resultado->fetch_assoc()) {
+                $asientos[] = $fila;
+            }
+
+            return $asientos;
+        } else {
+            return null; // No hay asientos disponibles
+        }
+    } catch (Exception $e) {
+        echo "Error en la consulta: " . $e->getMessage();
+        return null;
+    }
+}
+
 ?>

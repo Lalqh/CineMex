@@ -19,7 +19,7 @@ if (!empty($peliculas)) {
                 <div class="card-body">
                     <h5 class="card-title">' . $titulo . '</h5>
                     <p class="card-text"> Duración: ' . $duracion . '</p>
-                    <a href="src/php/Secciones/ShowMovie.php?id=' . $pelicula['ID'] . '" class="btn btn-primary">Ver más</a>
+                    <a href="src/php/Secciones/Peliculas/ShowMovie.php?id=' . $pelicula['ID'] . '" class="btn btn-primary">Ver más</a>
                 </div>
             </div>
         </div>
