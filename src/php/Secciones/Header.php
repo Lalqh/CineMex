@@ -12,9 +12,7 @@
     <nav>
         <ul>
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Cartelera</a></li>
-            <li><a href="#">Próximos estrenos</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="/src/php/Secciones/Usuarios/RegistrarUsuario.html">Registrate</a></li
         </ul>
     </nav>
 </header>
