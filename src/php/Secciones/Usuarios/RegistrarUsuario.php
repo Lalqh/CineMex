@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="../../../css/Styles.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
+<?php include "../Header.php"?>
 <div class="container">
     <h1 class="text-center my-4">Registro de Usuario</h1>
     <div class="row justify-content-center">
@@ -41,7 +43,6 @@
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
     $(document).ready(function() {
@@ -85,6 +86,7 @@
 
                     if(resp.respuesta === 'correcto'){
                         $('#message').html('<div class="alert alert-success">Registrado correctamente.</div>');
+                        window.location.href = '../../../../../index.php'
 
                     }
                     $('#registrationForm')[0].reset();

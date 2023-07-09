@@ -9,6 +9,7 @@
 </head>
 <body>
 <?php include "../Header.php"; ?>
+<main>
 <div class="container">
     <?php
     include "../../Funciones/Peliculas.php";
@@ -37,6 +38,9 @@
     }
     ?>
 </div>
+</main>
+
 </body>
+
 </html>
 

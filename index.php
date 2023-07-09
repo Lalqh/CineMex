@@ -17,7 +17,7 @@
 </main>
 
 <footer>
-    <p class="text-center">Derechos de autor &copy; 2023 Cine</p>
+    <p class="text-center">Derechos de autor &copy; 2023 CineMex</p>
     <i class="fas fa-thumbs-up"></i>
 </footer>
 </body>

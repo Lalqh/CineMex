@@ -11,8 +11,9 @@
 <header>
     <nav>
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="/src/php/Secciones/Usuarios/RegistrarUsuario.html">Registrate</a></li
+            <li><a href="../../../../index.php">Inicio</a></li>
+            <li><a href="/src/php/Secciones/Usuarios/RegistrarUsuario.php">Registrate</a></li>
+            <li><a href="/src/php/Secciones/Usuarios/LogearUsuario.php">Ingresar</a></li>
         </ul>
     </nav>
 </header>
